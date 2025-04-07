@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
 import Languages from './components/Languages';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.module.css';
 
@@ -21,6 +22,7 @@ function App() {
       <Skills />
       <Certifications />
       <Languages />
+      <Contact />
       <Footer />
     </>
   );

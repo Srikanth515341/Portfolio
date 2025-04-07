@@ -1,29 +1,53 @@
 .skills {
-    padding: 60px;
-    background-color: #f0f7f7;
+    padding: 4rem 2rem;
+    background-color: #eef6f7;
     text-align: center;
   }
   
   .skills h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
   }
   
-  .skillsGrid {
+  .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 20px;
-    max-width: 900px;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
-  .skillItem {
-    background-color: #fff;
-    padding: 14px;
+  .card {
+    background-color: white;
+    padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #2d5c5c;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #445b55;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
   }
   

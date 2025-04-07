@@ -6,7 +6,7 @@ const Hero = () => {
     <section className={styles.hero} id="hero">
       <div className={styles.content}>
         <h1>Hey, I'm <span>Srikanth</span>.</h1>
-        <p>"On a mission to build, I bring ideas to life" — I help businesses and entrepreneurs create powerful digital experiences.</p>
+        <p>I’m a passionate software engineer who loves solving problems through clean code and scalable solutions.</p>
         <a href="#contact" className={styles.cta}>Work with Me</a>
       </div>
       <div className={styles.image}>
