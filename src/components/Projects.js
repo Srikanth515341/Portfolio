@@ -28,7 +28,7 @@ const Projects = () => {
             Developed a full-stack project management app inspired by Trello.
             Implemented boards, task tracking, and authentication using React, Node.js, Express, and MongoDB.
           </p>
-          <a href="https://github.com/Srikanth515341" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/Srikanth515341/Project-Management-Tool-Trello" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </section>
