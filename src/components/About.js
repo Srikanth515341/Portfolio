@@ -12,11 +12,11 @@ const About = () => {
         <div className={styles.text}>
           <h2>About Me</h2>
           <p>
-            I'm a passionate software engineer who loves solving problems through clean code and scalable solutions. I focus on building secure, high-performance applications with modern technologies.
+          An enthusiastic and highly motivated full-stack developer with strong academic coursework at EPITA and hands-on experience in full-stack development.
+          </p> 
+          <p>I am currently seeking internship opportunities in full-stack development where I can apply my knowledge to solve technical and business challenges as a software engineer.
           </p>
-          <p>
-            I enjoy turning ideas into meaningful digital products. My goal is to help individuals and startups bring their vision to life through functional, responsive, and professional web applications.
-          </p>
+         
         </div>
       </div>
     </section>

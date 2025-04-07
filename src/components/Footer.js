@@ -38,9 +38,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className={styles.bottomBar}>
-        © 2025 Srikanth Nelluri. All rights reserved.
-      </div>
+      
     </footer>
   );
 };

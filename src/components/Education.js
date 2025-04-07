@@ -1,20 +1,35 @@
 import React from 'react';
-import styles from '../styles/Education.module.css';
+import { FaGraduationCap } from 'react-icons/fa';
+import styles from '../styles/Education.module.css'; // ✅ Correct path
 
 const Education = () => {
   return (
-    <section className={styles.education} id="education">
-      <h2>Education</h2>
-      <div className={styles.educationItem}>
-        <h3>EPITA – Paris, France</h3>
-        <p>M.Sc. in Software Engineering (Feb 2024 – Feb 2026)</p>
-        <p>Completed 3 semesters, currently seeking an internship.</p>
-      </div>
+    <section id="education" className={styles.educationSection}>
+      <h2 className={styles.title}>Education</h2>
+      <div className={styles.educationGrid}>
+        {/* EPITA */}
+        <div className={styles.card}>
+          <FaGraduationCap className={styles.icon} />
+          <h3 className={styles.degree}>
+            Master's in Computer Science – <br /> Software Engineering
+          </h3>
+          <p className={styles.institution}>EPITA School of Engineering and Computer Science</p>
+          <p className={styles.location}>Paris, France</p>
+          <p className={styles.details}>
+            <strong>Key Courses:</strong> Software Engineering, Web Development, Cloud Fundamentals, CI/CD, System Architecture.
+          </p>
+        </div>
 
-      <div className={styles.educationItem}>
-        <h3>SR & BGNR Govt. College – Khammam, India</h3>
-        <p>B.Sc. in Computer Science (Completed Oct 2020)</p>
-        <p>Grade: 8.56 / 10</p>
+        {/* SR & BGNR College */}
+        <div className={styles.card}>
+          <FaGraduationCap className={styles.icon} />
+          <h3 className={styles.degree}>B.Sc. in Computer Science</h3>
+          <p className={styles.institution}>SR & BGNR Govt. College</p>
+          <p className={styles.location}>Khammam, India</p>
+          <p className={styles.details}>
+            <strong>Key Courses:</strong> C, C++, Java, Python.
+          </p>
+        </div>
       </div>
     </section>
   );

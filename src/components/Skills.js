@@ -1,4 +1,3 @@
-// src/components/Skills.js
 import React from 'react';
 import styles from '../styles/Skills.module.css';
 import { FaCode, FaDatabase, FaCloud, FaLock, FaGitAlt, FaUsers } from 'react-icons/fa';
@@ -7,7 +6,13 @@ const skills = [
   {
     icon: <FaCode size={40} />,
     title: 'Programming & Scripting',
-    description: 'Proficient in JavaScript, Python, SQL, HTML, CSS, and Bash.'
+    description: (
+      <>
+        Proficient in JavaScript, Python,
+        <br />
+        React.js, Node.js
+      </>
+    )
   },
   {
     icon: <FaDatabase size={40} />,

@@ -1,28 +1,64 @@
-.education {
-    padding: 60px;
-    background-color: #f0f7f7;
+.educationSection {
+    padding: 4rem 2rem;
+    background-color: #f4fafa;
+    text-align: center;
   }
   
-  .education h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .educationGrid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    width: 350px;
+    max-width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #2f4f4f;
+    margin-bottom: 1rem;
+  }
+  
+  .degree {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .institution {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  
+  .location {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .details {
+    font-size: 0.95rem;
     color: #333;
-  }
-  
-  .educationItem {
-    margin-bottom: 30px;
-    padding-left: 20px;
-    border-left: 4px solid #445b55;
-  }
-  
-  .educationItem h3 {
-    font-size: 22px;
-    margin-bottom: 5px;
-  }
-  
-  .educationItem p {
-    font-size: 16px;
-    color: #555;
-    margin: 5px 0;
   }
   
