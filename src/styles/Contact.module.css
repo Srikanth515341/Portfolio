@@ -1,27 +1,57 @@
-.contact {
-    padding: 4rem 2rem;
-    background-color: #f5f9f9;
-    text-align: center;
-  }
-  
-  .contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .contact p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-    color: #444;
-  }
-  
-  .contactDetails a {
-    color: #007acc;
-    text-decoration: none;
-  }
-  
-  .contactDetails a:hover {
-    text-decoration: underline;
-  }
-  
+.contactSection {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.contactSection h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #4F6D7A; /* Updated color to match the second image */
+}
+
+.contactSection p {
+  font-size: 1.1rem;
+  color: #4F6D7A; /* Updated color to match the second image */
+}
+
+.contactDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactBox {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contactBox strong {
+  font-weight: bold;
+  color: #4F6D7A; /* Updated color to match the second image */
+}
+
+.contactBox p {
+  color: #4F6D7A; /* Updated color to match the second image */
+}
+
+.contactBox a {
+  text-decoration: none;
+  color: #4F6D7A; /* Updated color to match the second image */
+}
+
+.contactBox a:hover {
+  text-decoration: underline;
+  color: #007bff; /* Keep hover color */
+}
+
+.contactIcon {
+  margin-right: 10px;
+  color: #4F6D7A; /* Updated color to match the second image */
+}

@@ -1,53 +1,54 @@
 .skills {
-    padding: 4rem 2rem;
-    background-color: #eef6f7;
-    text-align: center;
-  }
-  
-  .skills h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2.5rem;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
-    gap: 2rem;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .icon {
-    font-size: 2rem;
-    color: #2d5c5c;
-    margin-bottom: 1rem;
-  }
-  
-  .card h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .card p {
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.5;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #eef6f7;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #4F6D7A; /* Updated color to match the required color */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  gap: 2rem;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #4F6D7A; /* Updated icon color */
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #4F6D7A; /* Updated heading color */
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #4F6D7A; /* Updated paragraph color */
+  line-height: 1.5;
+}
