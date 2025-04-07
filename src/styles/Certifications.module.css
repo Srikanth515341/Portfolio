@@ -1,0 +1,27 @@
+.certifications {
+    padding: 60px;
+    background-color: #f8fcfc;
+  }
+  
+  .certifications h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .certItem {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 4px solid #445b55;
+  }
+  
+  .certItem h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  
+  .certItem p {
+    font-size: 16px;
+    color: #555;
+  }
+  
