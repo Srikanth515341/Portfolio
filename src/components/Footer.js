@@ -33,8 +33,8 @@ const Footer = () => {
               <FaGithub />
             </a>
           </div>
-          <p><FaPhone /> +33 07 45 68 54 96</p>
-          <p><FaEnvelope /> srikanthportfolio@gmail.com</p>
+          <p><FaPhone /> +33 07 45 54 22 72</p>
+          <p><FaEnvelope /> nellurisrikanthchowdary007@gmail.com</p>
         </div>
       </div>
 

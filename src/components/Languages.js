@@ -7,7 +7,7 @@ const Languages = () => {
       <h2>Languages</h2>
       <ul>
         <li>English — Fluent</li>
-        <li>French — Beginner (A1)</li>
+        <li>French — Beginner (A2)</li>
         <li>Telugu — Native</li>
         <li>Hindi — Conversational</li>
       </ul>

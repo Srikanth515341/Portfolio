@@ -1,27 +1,55 @@
-.certifications {
-    padding: 60px;
-    background-color: #f8fcfc;
+.certificationsSection {
+    padding: 50px 0;
+    background-color: #f8f9fa;
   }
   
-  .certifications h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #333;
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
   }
   
-  .certItem {
-    margin-bottom: 25px;
-    padding-left: 20px;
-    border-left: 4px solid #445b55;
+  .certificationsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  .certItem h3 {
-    font-size: 22px;
-    margin-bottom: 5px;
+  .card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
-  .certItem p {
-    font-size: 16px;
+  .card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
     color: #555;
+    margin-bottom: 20px;
+  }
+  .viewButton {
+    background-color: #4a4a4a; /* Set background color to dark grey */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .viewButton:hover {
+    background-color: #3a3a3a; /* Darker shade on hover */
   }
   
