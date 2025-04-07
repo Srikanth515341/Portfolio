@@ -53,3 +53,9 @@
   color: #4F6D7A; /* Updated text color to match the second image */
   margin-top: 5px;
 }
+
+.languagesSection {
+  padding: 50px 0;
+  background-color: #eef6f7;
+  margin-bottom: 30px; /* Space between Languages and Contact Me */
+}

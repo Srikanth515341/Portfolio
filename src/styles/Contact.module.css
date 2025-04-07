@@ -55,3 +55,9 @@
   margin-right: 10px;
   color: #4F6D7A; /* Updated color to match the second image */
 }
+.contact {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  margin-top: 20px; /* Space between Projects and Contact */
+  margin-bottom: 30px; /* Space before footer */
+}

@@ -48,3 +48,9 @@
 .details a:hover {
   text-decoration: underline;
 }
+.projects {
+  padding: 4rem 2rem;
+  background-color: #f7fcfc;
+  margin-top: 20px; /* Space between About and Projects */
+  margin-bottom: 30px; /* Space between Projects and next section */
+}

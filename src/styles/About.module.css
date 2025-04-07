@@ -1,6 +1,13 @@
 .about {
   padding: 60px 20px;
   background-color: #f3fafa;
+  margin-top: 20px; /* Space between Hero and About */
+  margin-bottom: 30px; /* Added space between About and next sections */
+}
+
+.about {
+  padding: 60px 20px;
+  background-color: #f3fafa;
 }
 
 .container {
@@ -10,7 +17,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px; /* Reduced gap */
 }
 
 .image {
@@ -37,12 +44,12 @@
 .text h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #4F6D7A; /* Updated color to match your preferred text color */
+  color: #4F6D7A; /* Text color */
 }
 
 .text p {
   font-size: 16px;
   line-height: 1.7;
-  color: #4F6D7A; /* Updated color to match your preferred text color */
+  color: #4F6D7A; /* Text color */
   margin-bottom: 15px;
 }

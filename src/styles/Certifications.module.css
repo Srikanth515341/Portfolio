@@ -55,3 +55,9 @@
 .viewButton:hover {
   background-color: #3a4f52; /* Darker shade of the color on hover */
 }
+
+.certificationsSection {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+  margin-bottom: 30px; /* Space between Certifications and Languages */
+}

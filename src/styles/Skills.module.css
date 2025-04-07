@@ -52,3 +52,9 @@
   color: #4F6D7A; /* Updated paragraph color */
   line-height: 1.5;
 }
+
+.skills {
+  padding: 4rem 2rem;
+  background-color: #eef6f7;
+  margin-bottom: 30px; /* Added space between Skills and Certifications */
+}
