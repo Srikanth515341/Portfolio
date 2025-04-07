@@ -5,6 +5,7 @@
   padding: 2rem 10%; /* Reduced padding for less space */
   background-color: #f0f9f9;
   flex-wrap: wrap;
+  margin-bottom: 30px; /* Added space between Hero and About sections */
 }
 
 .content {
@@ -38,13 +39,4 @@
   width: 400px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 10%;
-  background-color: #f0f9f9;
-  flex-wrap: wrap;
-  margin-bottom: 30px; /* Added space between Hero and About sections */
 }
