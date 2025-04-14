@@ -12,10 +12,11 @@ const About = () => {
         <div className={styles.text}>
           <h2>About Me</h2>
           <p>
-          An enthusiastic and highly motivated full-stack developer with strong academic coursework at EPITA and hands-on experience in full-stack development.
+          Master’s student in Software Engineering at EPITA, Paris, specializing in full-stack development, cloud technologies (AWS), and modern software architecture.
           </p> 
-          <p>I am currently seeking internship opportunities in full-stack development where I can apply my knowledge to solve technical and business challenges as a software engineer.
+          <p>Proficient in React.js, Node.js, PostgreSQL, MongoDB and Git, with hands-on experience building and deploying scalable web applications
           </p>
+          <p>Actively seeking a full-time internship to apply my technical expertise, collaborate with dynamic teams, and contribute to impactful software solutions.</p>
          
         </div>
       </div>

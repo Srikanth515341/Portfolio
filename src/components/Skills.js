@@ -22,7 +22,7 @@ const skills = [
   {
     icon: <FaCloud size={40} />,
     title: 'Cloud Basics',
-    description: 'Familiar with AWS services and deployment fundamentals.'
+    description: 'Familiar with cloud platforms such as AWS and Render, with a solid understanding of deployment fundamentals and cloud service integration.'
   },
   {
     icon: <FaLock size={40} />,

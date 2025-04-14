@@ -16,7 +16,7 @@ const Education = () => {
           <p className={styles.institution}>EPITA School of Engineering and Computer Science</p>
           <p className={styles.location}>Paris, France</p>
           <p className={styles.details}>
-            <strong>Key Courses:</strong> Software Engineering, Web Development, Cloud Fundamentals, CI/CD, System Architecture.
+            <strong>Key Courses:</strong> Pursuing an MSc in Software Engineering at EPITA, Paris, focused on full-stack development, cloud (AWS), and DevOps. Gained hands-on experience with React.js, Node.js, PostgreSQL, and MongoDB through project-based learning and Agile collaboration.
           </p>
         </div>
 
