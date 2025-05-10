@@ -26,7 +26,7 @@ const Footer = () => {
         <div className={styles.contact}>
           <h3>Connect</h3>
           <div className={styles.socialIcons}>
-            <a href="https://www.linkedin.com/in/srikanth-nelluri/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/srikanth-nelluri-//" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
             <a href="https://github.com/Srikanth515341" target="_blank" rel="noreferrer">

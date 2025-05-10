@@ -38,7 +38,7 @@ const Contact = () => {
           <div>
             <strong>LinkedIn:</strong>
             <p>
-              <a href="https://www.linkedin.com/in/srikanth-nelluri" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/srikanth-nelluri-/" target="_blank" rel="noopener noreferrer">
                 View LinkedIn Profile
               </a>
             </p>
