@@ -1,61 +1,82 @@
 .languagesSection {
-  padding: 50px 0;
-  background-color: #eef6f7; /* Same background color as the skills section */
-}
-
-.languagesTitle {
+  padding: 80px 10%;
+  background-color: #020617; /* dark theme */
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #4F6D7A; /* Updated text color to match the second image */
+  margin-bottom: 60px;
 }
 
+/* Heading */
+.languagesTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #38bdf8;
+}
+
+/* Grid */
 .languagesGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 4 */
-  gap: 30px;
-  max-width: 800px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 700px;
   margin: 0 auto;
 }
 
+/* Card */
 .languageCard {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.languageCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
+}
+
+/* Circle */
 .circle {
-  background-color: #4F6D7A; /* Updated to match the color from the skills section */
-  color: white;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #fff;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: 1.25rem;
+  margin: 0 auto 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
+/* Language name */
 .languageCard p {
   font-size: 1.2rem;
   margin-top: 10px;
-  font-weight: bold;
-  color: #4F6D7A; /* Updated text color to match the second image */
+  font-weight: 600;
+  color: #ffffff;
 }
 
+/* Level */
 .level {
-  font-size: 1rem;
-  color: #4F6D7A; /* Updated text color to match the second image */
+  font-size: 0.95rem;
+  color: #94a3b8;
   margin-top: 5px;
 }
 
-.languagesSection {
-  padding: 50px 0;
-  background-color: #eef6f7;
-  margin-bottom: 30px; /* Space between Languages and Contact Me */
+/* Responsive */
+@media (max-width: 600px) {
+  .languagesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .languagesSection {
+    padding: 60px 6%;
+  }
+
+  .languagesTitle {
+    font-size: 2rem;
+  }
 }

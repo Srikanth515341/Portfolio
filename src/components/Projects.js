@@ -1,41 +1,127 @@
 import React from 'react';
 import styles from '../styles/Projects.module.css';
-import ecommerceImg from '../assets/ecommerce.png';
-import trelloImg from '../assets/trello.png';
 
 const Projects = () => {
   return (
     <section className={styles.projects} id="projects">
-      <h2>Projects</h2>
+      <h2>QA Automation Projects</h2>
 
+      {/* Project 1 */}
       <div className={styles.projectCard}>
-        <img src={ecommerceImg} alt="E-Commerce Platform" className={styles.image} />
         <div className={styles.details}>
-          <h3>E-Commerce Platform (ShopSphere)</h3>
+          <h3>Enterprise Banking Test Automation Framework</h3>
+
           <p>
-          Tech Stack: React.js, Node.js, Express.js, PostgreSQL, Context API, CSS Modules <br></br>
-          ●Built a full-stack e-commerce platform with product listings, category filters, and search functionality. <br></br>
-●Implemented a shopping cart with add, remove, quantity update, and clear-cart functionalities using Context API.<br></br>
-●Integrated a checkout system with form validation to collect user details and process orders.<br></br>
-●Designed a responsive and user-friendly interface using modular CSS for consistency across devices.
+            Built an enterprise-grade automation framework validating UI, API, and database layers for core banking workflows including authentication, account management, fund transfers, and transaction validation.
           </p>
-          <a href="https://github.com/Srikanth515341/ShopSphere" target="_blank" rel="noreferrer">GitHub</a>
+
+          <p>
+            <strong>Tech:</strong> Java, Selenium, REST Assured, JUnit, Cucumber (BDD), JDBC, Docker, Jenkins
+          </p>
+
+          <ul>
+            <li>Implemented UI automation using Selenium with Page Object Model (POM)</li>
+            <li>Automated API validation including schema validation, negative testing, and contract testing</li>
+            <li>Performed database validation using SQL/JDBC for transactional integrity</li>
+            <li>Integrated CI/CD pipelines with Jenkins and containerized execution using Docker</li>
+            <li>Enabled data-driven testing and reporting with Allure</li>
+          </ul>
+
+          <a
+            href="https://github.com/Srikanth515341/enterprise-banking-test-automation-framework.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
         </div>
       </div>
 
+      {/* Project 2 */}
       <div className={styles.projectCard}>
-        <img src={trelloImg} alt="Project Management Tool" className={styles.image} />
         <div className={styles.details}>
-          <h3>Project Management Tool (Trello Clone)</h3>
+          <h3>Backend API & Data Validation Automation Framework</h3>
+
           <p>
-          Tech Stack: React.js, Node.js, Express.js, MongoDB <br></br>
-●Developed a project management tool for creating projects, managing tasks, and tracking progress. <br></br>
-●Built a real-time task board with drag-and-drop functionality, filtering, and update/delete features. <br></br>
-●Developed a scalable backend with Node.js, Express.js, and MongoDB, ensuring a responsive UI across devices.
+            Designed a backend-focused automation framework for validating REST APIs, authentication flows, and data integrity across microservices-based systems.
           </p>
-          <a href="https://github.com/Srikanth515341/Project-Management-Tool-Trello" target="_blank" rel="noreferrer">GitHub</a>
+
+          <p>
+            <strong>Tech:</strong> Python, Pytest, Requests, Behave (BDD), PostgreSQL, Docker, Jenkins, JMeter
+          </p>
+
+          <ul>
+            <li>Automated CRUD API validation with authentication and negative testing scenarios</li>
+            <li>Performed database validation using SQL and psycopg2</li>
+            <li>Implemented API contract testing and service mocking</li>
+            <li>Enabled data-driven testing using JSON/CSV datasets</li>
+            <li>Integrated CI/CD pipelines and generated reports using Allure</li>
+          </ul>
+
+          <a
+            href="https://github.com/Srikanth515341/backend-api-data-validation-automation-framework.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
         </div>
       </div>
+
+      {/* Project 3 */}
+      <div className={styles.projectCard}>
+        <div className={styles.details}>
+          <h3>Modern SaaS Web & API Automation Framework</h3>
+
+          <p>
+            Built a modern automation framework for SaaS applications to validate end-to-end workflows across UI, API, and database layers using Playwright and TypeScript.
+          </p>
+
+          <p>
+            <strong>Tech:</strong> TypeScript, Playwright, Node.js, Cucumber, Postman, Newman, Docker, GitHub Actions
+          </p>
+
+          <ul>
+            <li>Automated complete user journeys including authentication, cart, checkout, and order flows</li>
+            <li>Implemented API testing using Playwright API and Postman collections</li>
+            <li>Enabled network mocking and service virtualization for failure testing</li>
+            <li>Integrated CI/CD pipelines with GitHub Actions</li>
+            <li>Generated reports and execution insights using Allure</li>
+          </ul>
+
+          <a
+            href="https://github.com/Srikanth515341/saas-ecommerce-automation-framework.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
+        </div>
+      </div>
+
+      {/* Optional Project */}
+      <div className={styles.projectCard}>
+        <div className={styles.details}>
+          <h3>Full-Stack E-Commerce Platform (Supporting Project)</h3>
+
+          <p>
+            Developed a full-stack e-commerce application to understand real-world system design, enabling better end-to-end test scenario design across UI, API, and database layers.
+          </p>
+
+          <p>
+            <strong>Tech:</strong> React.js, Node.js, Express.js, PostgreSQL
+          </p>
+
+          <a
+            href="https://github.com/Srikanth515341/ecomart.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
+        </div>
+      </div>
+
     </section>
   );
 };

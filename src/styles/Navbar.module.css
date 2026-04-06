@@ -2,44 +2,136 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 18px 6%;
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.12);
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #4F6D7A; /* Set logo color to the same as the text color */
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.6px;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #38bdf8;
 }
 
 .navLinks {
   display: flex;
-  gap: 30px;
+  gap: 24px;
   list-style: none;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navLinks a {
   text-decoration: none;
-  color: #4F6D7A; /* Set link color to match text color */
+  color: #cbd5f5;
   font-weight: 500;
-  transition: color 0.3s;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+}
+
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: #38bdf8;
+  transition: width 0.3s ease;
 }
 
 .navLinks a:hover {
-  color: #007bff; /* Keep hover color if needed */
+  color: #ffffff;
 }
 
-.navBtn {
-  background-color: #445b55;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: 500;
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.githubBtn {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #fff;
+  padding: 9px 18px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.githubBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.35);
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    padding: 16px 4%;
+  }
+
+  .navLinks {
+    gap: 18px;
+  }
+
+  .navLinks a {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .navLinks {
+    gap: 14px;
+  }
+
+  .navLinks a {
+    font-size: 0.86rem;
+  }
+
+  .githubBtn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .navbar {
+    padding: 14px 6%;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .githubBtn {
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
 }

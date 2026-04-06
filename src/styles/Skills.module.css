@@ -1,60 +1,75 @@
 .skills {
-  padding: 4rem 2rem;
-  background-color: #eef6f7;
+  padding: 80px 10%;
+  background-color: #020617; /* dark theme */
   text-align: center;
+  margin-bottom: 60px;
 }
 
-.skills h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2.5rem;
-  color: #4F6D7A; /* Updated color to match the required color */
+/* Heading */
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #38bdf8;
 }
 
+/* Grid Layout */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  justify-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Card */
 .card {
-  background-color: white;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-  width: 100%;
-  max-width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
 }
 
+/* Icon */
 .icon {
-  font-size: 2rem;
-  color: #4F6D7A; /* Updated icon color */
+  color: #38bdf8;
   margin-bottom: 1rem;
 }
 
+/* Title */
 .card h3 {
   font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #4F6D7A; /* Updated heading color */
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
 }
 
+/* Description */
 .card p {
   font-size: 0.95rem;
-  color: #4F6D7A; /* Updated paragraph color */
-  line-height: 1.5;
+  color: #cbd5f5;
+  line-height: 1.6;
 }
 
-.skills {
-  padding: 4rem 2rem;
-  background-color: #eef6f7;
-  margin-bottom: 30px; /* Added space between Skills and Certifications */
+/* Responsive */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    padding: 60px 6%;
+  }
 }

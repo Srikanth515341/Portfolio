@@ -1,67 +1,85 @@
 .educationSection {
-  padding: 4rem 2rem;
-  background-color: #f4fafa;
+  padding: 80px 10%;
+  background-color: #020617;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  color: #4F6D7A; /* Updated color to match the text color */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #38bdf8;
 }
 
 .educationGrid {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .card {
-  background-color: #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  padding: 2rem;
-  width: 350px;
-  max-width: 100%;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 760px;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
 }
 
 .icon {
   font-size: 2rem;
-  color: #2f4f4f;
+  color: #38bdf8;
   margin-bottom: 1rem;
 }
 
 .degree {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #4F6D7A; /* Updated color to match the text color */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
 }
 
 .institution {
   font-weight: 600;
-  margin-bottom: 0.2rem;
-  color: #4F6D7A; /* Updated color to match the text color */
+  margin-bottom: 0.4rem;
+  color: #cbd5f5;
+  font-size: 1.05rem;
 }
 
 .location {
   font-style: italic;
-  margin-bottom: 1rem;
-  color: #4F6D7A; /* Updated color to match the text color */
+  margin-bottom: 1.2rem;
+  color: #94a3b8;
 }
 
 .details {
-  font-size: 0.95rem;
-  color: #4F6D7A; /* Updated color to match the text color */
+  font-size: 1rem;
+  color: #cbd5f5;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .educationSection {
+    padding: 60px 6%;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .degree {
+    font-size: 1.3rem;
+  }
 }

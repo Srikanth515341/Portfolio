@@ -1,50 +1,77 @@
 import React from 'react';
 import styles from '../styles/Skills.module.css';
-import { FaCode, FaDatabase, FaCloud, FaLock, FaGitAlt, FaUsers } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaCloud, FaBug, FaCogs, FaTools } from 'react-icons/fa';
 
 const skills = [
   {
-    icon: <FaCode size={40} />,
-    title: 'Programming & Scripting',
+    icon: <FaBug size={40} />,
+    title: 'Automation & Testing',
     description: (
       <>
-        Proficient in JavaScript, Python,
+        Selenium, Playwright, REST Assured, Pytest,
         <br />
-        React.js, Node.js
+        Cucumber (Gherkin), Behave
+      </>
+    )
+  },
+  {
+    icon: <FaCogs size={40} />,
+    title: 'API Testing',
+    description: (
+      <>
+        Postman, Newman, Requests,
+        <br />
+        Schema Validation, Contract Testing (Schemathesis), Service Mocking
       </>
     )
   },
   {
     icon: <FaDatabase size={40} />,
-    title: 'Database Management',
-    description: 'Experience with PostgreSQL and MongoDB for efficient data handling.'
+    title: 'Database Validation',
+    description: (
+      <>
+        SQL, JDBC, PostgreSQL, MongoDB
+      </>
+    )
+  },
+  {
+    icon: <FaCode size={40} />,
+    title: 'Programming',
+    description: (
+      <>
+        Java, Python, JavaScript, TypeScript
+      </>
+    )
   },
   {
     icon: <FaCloud size={40} />,
-    title: 'Cloud Basics',
-    description: 'Familiar with cloud platforms such as AWS and Render, with a solid understanding of deployment fundamentals and cloud service integration.'
+    title: 'CI/CD & DevOps',
+    description: (
+      <>
+        Jenkins, GitHub Actions, GitLab CI,
+        <br />
+        Docker
+      </>
+    )
   },
   {
-    icon: <FaLock size={40} />,
-    title: 'Security Practices',
-    description: 'Understanding of secure coding and authentication mechanisms.'
-  },
-  {
-    icon: <FaGitAlt size={40} />,
-    title: 'Version Control',
-    description: 'Proficient with Git and GitHub for collaboration and CI/CD workflows.'
-  },
-  {
-    icon: <FaUsers size={40} />,
-    title: 'Soft Skills',
-    description: 'Strong problem-solving, adaptability, and team collaboration.'
+    icon: <FaTools size={40} />,
+    title: 'QA Practices',
+    description: (
+      <>
+        Functional Testing, Regression Testing,
+        <br />
+        Test Case Design, Data-Driven Testing, BDD, Agile
+      </>
+    )
   }
 ];
 
 const Skills = () => {
   return (
     <section className={styles.skills} id="skills">
-      <h2 className={styles.title}>Skills</h2>
+      <h2 className={styles.title}>Technical Skills</h2>
+
       <div className={styles.grid}>
         {skills.map((skill, index) => (
           <div key={index} className={styles.card}>

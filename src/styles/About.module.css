@@ -1,13 +1,8 @@
 .about {
-  padding: 60px 20px;
-  background-color: #f3fafa;
-  margin-top: 20px; /* Space between Hero and About */
-  margin-bottom: 30px; /* Added space between About and next sections */
-}
-
-.about {
-  padding: 60px 20px;
-  background-color: #f3fafa;
+  padding: 80px 10%;
+  background-color: #020617; /* dark background */
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .container {
@@ -17,39 +12,64 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px; /* Reduced gap */
+  gap: 40px;
 }
 
+/* Image */
 .image {
   flex: 1;
   min-width: 300px;
   max-width: 500px;
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .image img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 16px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
 }
 
+.image img:hover {
+  transform: scale(1.03);
+}
+
+/* Text */
 .text {
   flex: 1;
   min-width: 300px;
 }
 
+/* Heading */
 .text h2 {
-  font-size: 32px;
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #4F6D7A; /* Text color */
+  color: #38bdf8; /* accent color */
 }
 
+/* Paragraph */
 .text p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #4F6D7A; /* Text color */
-  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #cbd5f5;
+  margin-bottom: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 6%;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 100%;
+  }
 }

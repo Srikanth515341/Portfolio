@@ -1,63 +1,89 @@
 .contactSection {
-  padding: 50px 0;
-  background-color: #f8f9fa;
+  padding: 80px 10%;
+  background-color: #020617; /* dark theme */
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
-.contactSection h2 {
+/* Heading */
+.contactTitle {
   font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #4F6D7A; /* Updated color to match the second image */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #38bdf8;
 }
 
-.contactSection p {
-  font-size: 1.1rem;
-  color: #4F6D7A; /* Updated color to match the second image */
+/* Subtitle */
+.subtitle {
+  font-size: 1.05rem;
+  color: #cbd5f5;
+  margin-bottom: 3rem;
 }
 
+/* Grid */
 .contactDetails {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 800px;
+  gap: 2rem;
+  max-width: 900px;
   margin: 0 auto;
 }
 
+/* Card */
 .contactBox {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.contactBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
+}
+
+/* Icon */
+.contactIcon {
+  color: #38bdf8;
+  margin-top: 4px;
+}
+
+/* Text */
 .contactBox strong {
-  font-weight: bold;
-  color: #4F6D7A; /* Updated color to match the second image */
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .contactBox p {
-  color: #4F6D7A; /* Updated color to match the second image */
+  margin-top: 4px;
+  color: #cbd5f5;
+  font-size: 0.95rem;
 }
 
+/* Links */
 .contactBox a {
   text-decoration: none;
-  color: #4F6D7A; /* Updated color to match the second image */
+  color: #38bdf8;
+  transition: all 0.3s ease;
 }
 
 .contactBox a:hover {
   text-decoration: underline;
-  color: #007bff; /* Keep hover color */
 }
 
-.contactIcon {
-  margin-right: 10px;
-  color: #4F6D7A; /* Updated color to match the second image */
-}
-.contact {
-  padding: 50px 20px;
-  background-color: #f8f9fa;
-  margin-top: 20px; /* Space between Projects and Contact */
-  margin-bottom: 30px; /* Space before footer */
+/* Responsive */
+@media (max-width: 768px) {
+  .contactDetails {
+    grid-template-columns: 1fr;
+  }
+
+  .contactSection {
+    padding: 60px 6%;
+  }
 }
